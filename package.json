@@ -3,7 +3,6 @@
   "version": "0.0.0",
   "license": "MIT",
   "scripts": {
-    "preinstall": "npm_config_yes=true npx use-yarn",
     "postinstall": "yarn husky install",
     "build": "yarn nx affected:build",
     "release": "yarn changeset publish"
