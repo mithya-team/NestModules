@@ -1,0 +1,25 @@
+{
+  "root": "packages/mongo-oplog-emitter",
+  "type": "library",
+  "sourceRoot": "packages/mongo-oplog-emitter/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "options": {
+        "outputPath": "dist/mongo-oplog-emitter",
+        "main": "packages/mongo-oplog-emitter/src/index.ts",
+        "tsConfig": "packages/mongo-oplog-emitter/tsconfig.build.json",
+        "deleteOutputPath": true,
+        "packageJson": "packages/mongo-oplog-emitter/package.json",
+        "assets": ["packages/mongo-oplog-emitter/*.md"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "packages/mongo-oplog-emitter/jest.config.js",
+        "codeCoverage": true
+      }
+    }
+  }
+}

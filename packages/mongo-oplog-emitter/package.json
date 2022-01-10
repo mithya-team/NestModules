@@ -1,0 +1,21 @@
+{
+  "name": "@mithyateam/mongo-oplog-emitter",
+  "version": "0.0.1",
+  "main": "index.ts",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "@golevelup/nestjs-discovery": "^2.3.1",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.3.0"
+  },
+  "peerDependencies": {
+    "@golevelup/nestjs-discovery": "^2.3.1",
+    "@nestjs/common": "^8.2.4",
+    "@nestjs/core": "^8.2.4"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.178"
+  }
+}

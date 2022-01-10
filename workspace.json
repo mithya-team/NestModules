@@ -1,4 +1,6 @@
 {
   "version": 2,
-  "projects": {}
+  "projects": {
+    "mongo-oplog-emitter": "packages/mongo-oplog-emitter"
+  }
 }
