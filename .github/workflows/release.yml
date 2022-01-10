@@ -66,5 +66,5 @@ jobs:
           node-version: 14.x
 
       - name: Install Dependencies
-        run: pnpm i --frozen-lockfile=false
+        run: yarn --frozen-lockfile
       - run: yarn nx-cloud start-agent
