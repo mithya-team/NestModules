@@ -1,5 +1,11 @@
 # @mithyateam/mongo-oplog-emitter
 
+## 1.0.4
+
+### Patch Changes
+
+- a37ccea: Update comments
+
 ## 1.0.3
 
 ### Patch Changes
