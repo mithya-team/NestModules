@@ -1,0 +1,70 @@
+name: Release
+
+on:
+  push:
+    branches:
+      - master
+
+env:
+  NX_BRANCH: ${{ github.event.pull_request.head.ref }}
+  NX_RUN_GROUP: ${{ github.run_id }}
+  NX_CLOUD_DISTRIBUTED_EXECUTION: true
+  NX_CLOUD_AUTH_TOKEN: ${{ secrets.NX_CLOUD_TOKEN }}
+
+jobs:
+  release:
+    name: Release
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Repo
+        uses: actions/checkout@v2
+        with:
+          # This makes Actions fetch all Git history so that Changesets can generate changelogs with the correct commits
+          fetch-depth: 0
+
+      - name: Derive appropriate SHAs for base and head for `nx affected` commands
+        uses: nrwl/nx-set-shas@v2
+
+      - name: Setup Node.js 14.x
+        uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+
+      - name: Install yarn
+        run: npm i -g yarn
+
+      - name: Install Dependencies
+        run: yarn --frozen-lockfile
+
+      - name: Build projects
+        run: yarn build
+
+      - name: Update workspace
+        run: |
+          jq '.workspaces=["dist/*"]' package.json > temp.json
+          mv temp.json package.json
+
+      - name: Create Release Pull Request or Publish to npm
+        uses: changesets/action@v1
+        with:
+          publish: yarn changeset publish
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+          NPM_TOKEN: ${{ secrets.NPM_TOKEN }}
+
+      - name: Stop Nx Cloud Agents
+        run: yarn nx-cloud stop-all-agents
+
+  agent_1:
+    runs-on: ubuntu-latest
+    name: Agent 1
+    timeout-minutes: 60
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: 14.x
+
+      - name: Install Dependencies
+        run: pnpm i --frozen-lockfile=false
+      - run: yarn nx-cloud start-agent

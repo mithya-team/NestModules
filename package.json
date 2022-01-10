@@ -4,7 +4,9 @@
   "license": "MIT",
   "scripts": {
     "preinstall": "npm_config_yes=true npx use-yarn",
-    "postinstall": "yarn husky install"
+    "postinstall": "yarn husky install",
+    "build": "yarn affected:build",
+    "release": "yarn changeset publish"
   },
   "private": true,
   "dependencies": {},

@@ -1,7 +1,6 @@
 {
   "name": "@mithyateam/mongo-oplog-emitter",
   "version": "1.0.1",
-  "main": "index.ts",
   "scripts": {
     "test": "node index.js"
   },
@@ -20,5 +19,9 @@
   },
   "publishConfig": {
     "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mithya-team/NestModules/tree/master/packages/mongo-oplog-emitter"
   }
 }
