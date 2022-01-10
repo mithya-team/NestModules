@@ -1,5 +1,11 @@
 # @mithyateam/mongo-oplog-emitter
 
+## 1.0.2
+
+### Patch Changes
+
+- f4e206f: Added github actions
+
 ## 1.0.1
 
 ### Patch Changes
