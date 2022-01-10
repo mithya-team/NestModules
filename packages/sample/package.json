@@ -1,0 +1,17 @@
+{
+  "name": "@mithyateam/sample",
+  "version": "0.0.0",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mithya-team/NestModules/tree/master/packages/sample.git"
+  },
+  "dependencies": {
+    "@mithyateam/mongo-oplog-emitter": "^1.0.2"
+  }
+}
