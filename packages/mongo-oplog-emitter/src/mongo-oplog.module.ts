@@ -18,6 +18,7 @@ import {
 import { DiscoveryModule, DiscoveryService } from '@golevelup/nestjs-discovery';
 import { groupBy } from 'lodash';
 
+// @TODO: Make use of golevelup nest-module
 @Global()
 @Module({
   providers: [MongoOplogService],
