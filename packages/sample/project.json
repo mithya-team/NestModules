@@ -7,7 +7,7 @@
       "executor": "@nrwl/node:package",
       "options": {
         "outputPath": "dist/sample",
-        "main": "packages/sample/src/index.ts",
+        "main": "packages/sample/index.ts",
         "tsConfig": "packages/sample/tsconfig.build.json",
         "deleteOutputPath": true,
         "packageJson": "packages/sample/package.json",
