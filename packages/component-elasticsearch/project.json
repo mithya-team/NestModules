@@ -1,0 +1,25 @@
+{
+  "root": "packages/component-elasticsearch",
+  "type": "library",
+  "sourceRoot": "packages/component-elasticsearch/src",
+  "targets": {
+    "build": {
+      "executor": "@nrwl/node:package",
+      "options": {
+        "outputPath": "dist/component-elasticsearch",
+        "main": "packages/component-elasticsearch/src/index.ts",
+        "tsConfig": "packages/component-elasticsearch/tsconfig.build.json",
+        "deleteOutputPath": true,
+        "packageJson": "packages/component-elasticsearch/package.json",
+        "assets": ["packages/component-elasticsearch/*.md"]
+      }
+    },
+    "test": {
+      "executor": "@nrwl/jest:jest",
+      "options": {
+        "jestConfig": "packages/component-elasticsearch/jest.config.js",
+        "codeCoverage": true
+      }
+    }
+  }
+}

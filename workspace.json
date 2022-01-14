@@ -1,6 +1,7 @@
 {
   "version": 2,
   "projects": {
+    "component-elasticsearch": "packages/component-elasticsearch",
     "mongo-oplog-emitter": "packages/mongo-oplog-emitter",
     "sample": "packages/sample"
   }
