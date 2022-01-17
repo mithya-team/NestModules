@@ -15,7 +15,7 @@ import {
 import ComponentElasticsearchService from './component-elasticsearch.service';
 import MongoEsIndexer from 'mongoesindexer';
 import { createComponentElasticsearchrProviders } from './component-elasticsearch.provider';
-import { MongoOplogModule } from 'mongo-oplog-emitter';
+import { MongoOplogModule } from '@mithyateam/mongo-oplog-emitter';
 
 @Global()
 @Module({
