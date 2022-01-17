@@ -1,5 +1,12 @@
 # @mithyateam/mongo-oplog-emitter
 
+## 1.0.6
+
+### Patch Changes
+
+- Update tsconfig
+- 54079e7: Version bum
+
 ## 1.0.5
 
 ### Patch Changes
