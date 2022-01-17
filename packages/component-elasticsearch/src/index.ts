@@ -1,1 +1,1 @@
-console.log('Test')
+export * from './component-elasticsearch.module';

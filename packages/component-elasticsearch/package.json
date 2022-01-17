@@ -1,0 +1,29 @@
+{
+  "name": "@mithyateam/nest-component-elasticsearch",
+  "version": "0.0.1",
+  "scripts": {
+    "test": "node index.js"
+  },
+  "dependencies": {
+    "@golevelup/nestjs-discovery": "^2.3.1",
+    "@mithyateam/mongo-oplog-emitter": "^1.0.4",
+    "lodash": "^4.17.21",
+    "mongodb": "^4.3.0",
+    "mongoesindexer": "^1.0.6",
+    "mongoose": "^6.1.6"
+  },
+  "peerDependencies": {
+    "@nestjs/common": "^8.2.4",
+    "@nestjs/core": "^8.2.4"
+  },
+  "devDependencies": {
+    "@types/lodash": "^4.14.178"
+  },
+  "publishConfig": {
+    "access": "public"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/mithya-team/NestModules/tree/master/packages/mongo-oplog-emitter"
+  }
+}

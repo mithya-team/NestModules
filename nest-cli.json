@@ -1,0 +1,29 @@
+{
+  "monorepo": true,
+  "root": "apps/nest-modules",
+  "sourceRoot": "apps/nest-modules/src",
+  "compilerOptions": {
+    "webpack": true,
+    "tsConfigPath": "apps/nest-modules/tsconfig.app.json"
+  },
+  "projects": {
+    "nest-modules": {
+      "type": "application",
+      "root": "apps/nest-modules",
+      "entryFile": "main",
+      "sourceRoot": "apps/nest-modules/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/nest-modules/tsconfig.app.json"
+      }
+    },
+    "modules-test": {
+      "type": "application",
+      "root": "apps/modules-test",
+      "entryFile": "main",
+      "sourceRoot": "apps/modules-test/src",
+      "compilerOptions": {
+        "tsConfigPath": "apps/modules-test/tsconfig.app.json"
+      }
+    }
+  }
+}
