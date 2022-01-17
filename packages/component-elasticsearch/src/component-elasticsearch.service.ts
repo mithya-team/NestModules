@@ -29,7 +29,7 @@ class ComponentElasticsearchService {
   async indexOne({ collection: indexName, oplogData }) {
     try {
       await this.MongoEsIndexer.indexOne(
-        `nestes_${indexName}`,
+        `${this.MongoEsIndexer.indexPrefix}${indexName}`,
         oplogData?.documentKey?._id,
       );
     } catch (error) {
@@ -41,7 +41,7 @@ class ComponentElasticsearchService {
   async updateOne({ collection: indexName, oplogData }) {
     try {
       await this.MongoEsIndexer.updateOne(
-        `nestes_${indexName}`,
+        `${this.MongoEsIndexer.indexPrefix}${indexName}`,
         oplogData?.documentKey?._id,
       );
     } catch (error) {
@@ -51,7 +51,7 @@ class ComponentElasticsearchService {
 
   @MongoOplogHandler('delete')
   deleteByIds({ collection: indexName, oplogData }): Promise<any> {
-    return this.MongoEsIndexer.deleteByIds(`nestes_${indexName}`, [
+    return this.MongoEsIndexer.deleteByIds(`${this.MongoEsIndexer.indexPrefix}${indexName}`, [
       oplogData?.documentKey?._id,
     ]);
   }

@@ -1,5 +1,11 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 0.0.5
+
+### Patch Changes
+
+- Remove hardcoded index prefix
+
 ## 0.0.4
 
 ### Patch Changes
