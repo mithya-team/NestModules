@@ -1,5 +1,11 @@
 # @mithyateam/mongo-oplog-emitter
 
+## 1.0.5
+
+### Patch Changes
+
+- Add component es indexer
+
 ## 1.0.4
 
 ### Patch Changes
