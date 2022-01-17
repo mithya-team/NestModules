@@ -2,7 +2,6 @@
   "version": 2,
   "projects": {
     "component-elasticsearch": "packages/component-elasticsearch",
-    "es-indexer-test": "packages/es-indexer-test",
     "mongo-oplog-emitter": "packages/mongo-oplog-emitter"
   }
 }
