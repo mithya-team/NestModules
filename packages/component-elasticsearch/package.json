@@ -1,12 +1,12 @@
 {
   "name": "@mithyateam/nest-component-elasticsearch",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "scripts": {
     "test": "node index.js"
   },
   "dependencies": {
     "@golevelup/nestjs-discovery": "^2.3.1",
-    "@mithyateam/mongo-oplog-emitter": "^1.0.6",
+    "@mithyateam/mongo-oplog-emitter": "^1.0.7",
     "lodash": "^4.17.21",
     "mongodb": "^4.3.0",
     "mongoesindexer": "^1.0.6",

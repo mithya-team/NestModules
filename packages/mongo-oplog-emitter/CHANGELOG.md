@@ -1,5 +1,11 @@
 # @mithyateam/mongo-oplog-emitter
 
+## 1.0.7
+
+### Patch Changes
+
+- Version Bump
+
 ## 1.0.6
 
 ### Patch Changes
