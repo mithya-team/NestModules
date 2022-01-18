@@ -25,11 +25,19 @@ class ComponentElasticsearchService {
     this.MongoEsIndexer = mongoEsIndexer;
   }
 
+  getIndexName(modelName: string): string {
+    const [modelConfig] = this.MongoEsIndexer.configs.filter(i=>i.model === modelName);
+    if(!modelConfig) {
+      throw new Error('No model config found for model: ' + modelName);
+    }
+    return modelConfig.indexName.split(this.MongoEsIndexer.indexPrefix)[1];
+  }
+
   @MongoOplogHandler('insert')
-  async indexOne({ collection: indexName, oplogData }) {
+  async indexOne({ collection: modelName, oplogData }) {
     try {
       await this.MongoEsIndexer.indexOne(
-        `${this.MongoEsIndexer.indexPrefix}${indexName}`,
+        `${this.MongoEsIndexer.indexPrefix}${this.getIndexName(modelName)}`,
         oplogData?.documentKey?._id,
       );
     } catch (error) {
@@ -38,10 +46,10 @@ class ComponentElasticsearchService {
   }
 
   @MongoOplogHandler('update')
-  async updateOne({ collection: indexName, oplogData }) {
+  async updateOne({ collection: modelName, oplogData }) {
     try {
       await this.MongoEsIndexer.updateOne(
-        `${this.MongoEsIndexer.indexPrefix}${indexName}`,
+        `${this.MongoEsIndexer.indexPrefix}${this.getIndexName(modelName)}`,
         oplogData?.documentKey?._id,
       );
     } catch (error) {
@@ -50,8 +58,8 @@ class ComponentElasticsearchService {
   }
 
   @MongoOplogHandler('delete')
-  deleteByIds({ collection: indexName, oplogData }): Promise<any> {
-    return this.MongoEsIndexer.deleteByIds(`${this.MongoEsIndexer.indexPrefix}${indexName}`, [
+  deleteByIds({ collection: modelName, oplogData }): Promise<any> {
+    return this.MongoEsIndexer.deleteByIds(`${this.MongoEsIndexer.indexPrefix}${this.getIndexName(modelName)}`, [
       oplogData?.documentKey?._id,
     ]);
   }

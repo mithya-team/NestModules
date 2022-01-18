@@ -1,5 +1,11 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 0.0.6
+
+### Patch Changes
+
+- Fix index update method
+
 ## 0.0.5
 
 ### Patch Changes
