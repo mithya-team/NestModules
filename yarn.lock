@@ -5213,9 +5213,9 @@ mongoesindexer@^1.0.6:
     mongodb "^3.4.1"
     mongoqueryresolver "https://github.com/saurabhg22/mongoqueryresolver.git"
 
-"mongoqueryresolver@https://github.com/saurabhg22/mongoqueryresolver.git":
+"mongoqueryresolver@git+https://github.com/saurabhg22/mongoqueryresolver.git":
   version "1.0.27"
-  resolved "https://github.com/saurabhg22/mongoqueryresolver.git#b29cf628fd2f1c2b902efd2262e318b8fc3dcd76"
+  resolved "git+https://github.com/saurabhg22/mongoqueryresolver.git#b29cf628fd2f1c2b902efd2262e318b8fc3dcd76"
   dependencies:
     lodash "^4.17.15"
     mongodb "^3.3.0"
