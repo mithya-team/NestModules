@@ -58,16 +58,16 @@ jobs:
       - name: Stop Nx Cloud Agents
         run: yarn nx-cloud stop-all-agents
 
-  agent_1:
-    runs-on: ubuntu-latest
-    name: Agent 1
-    timeout-minutes: 60
-    steps:
-      - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: 14.x
+  # agent_1:
+  #   runs-on: ubuntu-latest
+  #   name: Agent 1
+  #   timeout-minutes: 60
+  #   steps:
+  #     - uses: actions/checkout@v2
+  #     - uses: actions/setup-node@v2
+  #       with:
+  #         node-version: 14.x
 
-      - name: Install Dependencies
-        run: yarn --frozen-lockfile
-      - run: yarn nx-cloud start-agent
+  #     - name: Install Dependencies
+  #       run: yarn --frozen-lockfile
+  #     - run: yarn nx-cloud start-agent

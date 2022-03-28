@@ -128,6 +128,7 @@ export default class ComponentElasticsearchModule {
         await mongoEsIndexerInstance.init();
       } catch (error) {
         mongoEsIndexerInstance.IS_ERRORED = true;
+        console.error(error);
       }
     })
     return mongoEsIndexerInstance;
