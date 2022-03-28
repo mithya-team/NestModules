@@ -1,5 +1,11 @@
 # @mithyateam/mongo-oplog-emitter
 
+## 2.0.1
+
+### Patch Changes
+
+- 6b27677: Add useUnifiedTopology opts to mongo client
+
 ## 2.0.0
 
 ### Major Changes
