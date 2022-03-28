@@ -1,5 +1,11 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 1.0.2
+
+### Patch Changes
+
+- 45dfa6d: Ignore if model not found
+
 ## 1.0.1
 
 ### Patch Changes
