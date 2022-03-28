@@ -1,5 +1,11 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 0.0.8
+
+### Patch Changes
+
+- 0ad57a2: Move mongo deps to peer deps
+
 ## 0.0.7
 
 ### Patch Changes
