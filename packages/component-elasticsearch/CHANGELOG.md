@@ -1,5 +1,18 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 1.0.0
+
+### Major Changes
+
+- 80f8164: Update @nrwl scripts
+
+### Patch Changes
+
+- 80f8164: Update tsconfig
+- Updated dependencies [80f8164]
+- Updated dependencies [80f8164]
+  - @mithyateam/mongo-oplog-emitter@2.0.0
+
 ## 0.0.9
 
 ### Patch Changes
