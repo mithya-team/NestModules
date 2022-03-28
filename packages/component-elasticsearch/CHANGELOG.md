@@ -1,5 +1,11 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 1.0.1
+
+### Patch Changes
+
+- ce9167d: Remove dummy comment
+
 ## 1.0.0
 
 ### Major Changes
