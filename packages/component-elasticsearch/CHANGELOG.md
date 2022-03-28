@@ -1,5 +1,11 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 1.0.3
+
+### Patch Changes
+
+- a4743a0: Log error on ES index fail
+
 ## 1.0.2
 
 ### Patch Changes
