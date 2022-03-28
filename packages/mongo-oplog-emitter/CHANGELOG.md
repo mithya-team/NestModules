@@ -1,5 +1,15 @@
 # @mithyateam/mongo-oplog-emitter
 
+## 2.0.0
+
+### Major Changes
+
+- 80f8164: Update @nrwl scripts
+
+### Patch Changes
+
+- 80f8164: Update tsconfig
+
 ## 1.0.8
 
 ### Patch Changes
