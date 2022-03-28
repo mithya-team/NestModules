@@ -1,5 +1,11 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 0.0.7
+
+### Patch Changes
+
+- 9e111c5: Add a comment
+
 ## 0.0.6
 
 ### Patch Changes
