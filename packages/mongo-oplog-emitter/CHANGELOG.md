@@ -1,5 +1,11 @@
 # @mithyateam/mongo-oplog-emitter
 
+## 1.0.8
+
+### Patch Changes
+
+- f53aabf: Update deps for mongo-oplog-emitter
+
 ## 1.0.7
 
 ### Patch Changes

@@ -1,6 +1,6 @@
 {
   "name": "@mithyateam/mongo-oplog-emitter",
-  "version": "1.0.7",
+  "version": "1.0.8",
   "scripts": {
     "test": "node index.js"
   },

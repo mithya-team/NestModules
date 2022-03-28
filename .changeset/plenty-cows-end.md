@@ -3,4 +3,4 @@
 '@mithyateam/mongo-oplog-emitter': patch
 ---
 
-Update deps for mongo-oplog-emitter
+Update tsconfig

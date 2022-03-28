@@ -1,5 +1,13 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 0.0.9
+
+### Patch Changes
+
+- f53aabf: Update deps for mongo-oplog-emitter
+- Updated dependencies [f53aabf]
+  - @mithyateam/mongo-oplog-emitter@1.0.8
+
 ## 0.0.8
 
 ### Patch Changes

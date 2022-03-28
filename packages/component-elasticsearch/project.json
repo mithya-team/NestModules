@@ -4,7 +4,7 @@
   "sourceRoot": "packages/component-elasticsearch/src",
   "targets": {
     "build": {
-      "executor": "@nrwl/node:package",
+      "executor": "@nrwl/js:tsc",
       "options": {
         "outputPath": "dist/component-elasticsearch",
         "main": "packages/component-elasticsearch/src/index.ts",
