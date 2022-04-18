@@ -13,7 +13,7 @@ import {
   ElasticsearchOptionsFactory,
 } from './interfaces/component-elasticsearch-options.interface';
 import ComponentElasticsearchService from './component-elasticsearch.service';
-import MongoEsIndexer from 'mongoesindexer';
+import MongoEsIndexer from '@mithyateam/mongoesindexer';
 import { createComponentElasticsearchrProviders } from './component-elasticsearch.provider';
 import { IMongoOplogOptions, MongoOplogModule } from '@mithyateam/mongo-oplog-emitter';
 

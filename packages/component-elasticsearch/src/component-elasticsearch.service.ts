@@ -7,7 +7,7 @@ import {
   Type,
 } from '@nestjs/common';
 import { MongoOplogHandler } from '@mithyateam/mongo-oplog-emitter';
-import MongoEsIndexer from 'mongoesindexer';
+import MongoEsIndexer from '@mithyateam/mongoesindexer';
 import { MONGO_ES_INDEXER } from './constants';
 
 @Injectable()
