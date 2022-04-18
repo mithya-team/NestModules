@@ -1,5 +1,11 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 1.1.1
+
+### Patch Changes
+
+- b1cfc6d: Update version for mongo-oplog-emitter
+
 ## 1.1.0
 
 ### Minor Changes
