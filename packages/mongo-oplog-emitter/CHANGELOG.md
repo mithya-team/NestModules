@@ -1,5 +1,11 @@
 # @mithyateam/mongo-oplog-emitter
 
+## 2.1.0
+
+### Minor Changes
+
+- b561c14: Call MongoClient with new
+
 ## 2.0.1
 
 ### Patch Changes
