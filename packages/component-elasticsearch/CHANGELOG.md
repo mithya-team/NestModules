@@ -1,5 +1,12 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 1.1.0
+
+### Minor Changes
+
+- 9166799: Update mongoesindexer dependency
+- 6467cb2: Fix import
+
 ## 1.0.4
 
 ### Patch Changes
