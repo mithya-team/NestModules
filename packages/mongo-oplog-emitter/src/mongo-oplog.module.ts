@@ -93,7 +93,7 @@ export class MongoOplogModule implements OnModuleInit, OnModuleDestroy {
       );
     };
 
-    const client = MongoClient(host, {
+    const client = new MongoClient(host, {
       useNewUrlParser: true,
       useUnifiedTopology: true
     });
