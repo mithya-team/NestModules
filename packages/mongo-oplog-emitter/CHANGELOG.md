@@ -1,5 +1,11 @@
 # @mithyateam/mongo-oplog-emitter
 
+## 2.1.3
+
+### Patch Changes
+
+- f3f7f40: Fix MongoOplogModule
+
 ## 2.1.0
 
 ### Minor Changes
