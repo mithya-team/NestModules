@@ -15,7 +15,7 @@ import {
 import ComponentElasticsearchService from './component-elasticsearch.service';
 import MongoEsIndexer from '@mithyateam/mongoesindexer';
 import { createComponentElasticsearchrProviders } from './component-elasticsearch.provider';
-import { IMongoOplogOptions, MongoOplogModule } from '@mithyateam/mongo-oplog-emitter';
+import { IMongoOplogModuleOptions, IMongoOplogOptions, MongoOplogModule } from '@mithyateam/mongo-oplog-emitter';
 
 @Global()
 @Module({
@@ -37,7 +37,7 @@ export default class ComponentElasticsearchModule {
 
   static registerAsync(
     options: ComponentElasticsearchAsyncOptions,
-    mongoOplogOptions: IMongoOplogOptions
+    mongoOplogOptions: IMongoOplogModuleOptions
   ): DynamicModule {
     const esProviders = createComponentElasticsearchrProviders();
 
@@ -45,9 +45,8 @@ export default class ComponentElasticsearchModule {
       module: ComponentElasticsearchModule,
       imports: [
         MongoOplogModule.registerAsync({
-          useFactory: () => {
-            return mongoOplogOptions;
-          },
+          useFactory: mongoOplogOptions.useFactory,
+          inject: [...mongoOplogOptions.inject]
         }),
         ...(options.imports || []),
       ],
