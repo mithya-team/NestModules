@@ -26,7 +26,7 @@ import { groupBy } from 'lodash';
 export class MongoOplogModule implements OnModuleInit, OnModuleDestroy {
   static registerAsync(options: IMongoOplogModuleOptions) {
     return {
-      imports: [DiscoveryModule],
+      imports: [DiscoveryModule, ...options.imports],
       module: MongoOplogModule,
       useFactory: options.useFactory,
       inject: options.inject || [],
