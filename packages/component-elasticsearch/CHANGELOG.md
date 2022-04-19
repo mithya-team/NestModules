@@ -1,5 +1,11 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 1.2.2
+
+### Patch Changes
+
+- b8e1c6b: Update dependencies
+
 ## 1.2.1
 
 ### Patch Changes
