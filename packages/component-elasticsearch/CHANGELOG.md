@@ -1,5 +1,16 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 1.2.0
+
+### Minor Changes
+
+- 87cdf77: Fix nest modules
+
+### Patch Changes
+
+- Updated dependencies [87cdf77]
+  - @mithyateam/mongo-oplog-emitter@2.2.0
+
 ## 1.1.6
 
 ### Patch Changes
