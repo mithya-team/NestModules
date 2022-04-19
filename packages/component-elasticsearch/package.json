@@ -6,8 +6,8 @@
   },
   "dependencies": {
     "@golevelup/nestjs-discovery": "^2.3.1",
-    "@mithyateam/mongo-oplog-emitter": "^2.1.2",
-    "@mithyateam/mongoesindexer": "^2.0.2",
+    "@mithyateam/mongo-oplog-emitter": "^2.2.0",
+    "@mithyateam/mongoesindexer": "^2.0.4",
     "lodash": "^4.17.21"
   },
   "peerDependencies": {

@@ -895,10 +895,18 @@
     globby "^11.0.0"
     read-yaml-file "^1.1.0"
 
-"@mithyateam/mongoesindexer@^2.0.2":
-  version "2.0.2"
-  resolved "https://registry.yarnpkg.com/@mithyateam/mongoesindexer/-/mongoesindexer-2.0.2.tgz#fe92fa982e87944c6dde2446f069c45a27e994f4"
-  integrity sha512-n8oRbuRyCX1PXkeWuGgycF9WjRnuX+DGgf/H+89kLRVN0sT0TdXSY5o4CGFGaEBxnJAzgagraQnFex5xyoATXQ==
+"@mithyateam/mongo-oplog-emitter@^2.2.0":
+  version "2.2.0"
+  resolved "https://registry.yarnpkg.com/@mithyateam/mongo-oplog-emitter/-/mongo-oplog-emitter-2.2.0.tgz#fb7e47bbfc99b235ba6e377b98198e6d3c84ad46"
+  integrity sha512-35AEzXqMFzpebJxg1FokQM8OZuHPDNIoc/H1RQGd3YAdHJlgXbhK56ixXsoTcK41/eAtlMfFNaFFu3KixMBJdA==
+  dependencies:
+    "@golevelup/nestjs-discovery" "^2.3.1"
+    lodash "^4.17.21"
+
+"@mithyateam/mongoesindexer@^2.0.4":
+  version "2.0.4"
+  resolved "https://registry.yarnpkg.com/@mithyateam/mongoesindexer/-/mongoesindexer-2.0.4.tgz#d066557317109daa4dac7d915994771e85afae4e"
+  integrity sha512-Gs6ohKEUnRW9pbfkshUr1sSkNNIKNly93eDtwa/zRmqtemLLoXRakhCQmT9EGE3USztfZgpwgEj0i59B3NGRTQ==
   dependencies:
     "@elastic/elasticsearch" "^8.1.0"
     deepmerge "^4.2.2"
