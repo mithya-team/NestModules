@@ -1,5 +1,11 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 1.1.3
+
+### Patch Changes
+
+- c3ff9a5: Update types
+
 ## 1.1.2
 
 ### Patch Changes
