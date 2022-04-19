@@ -1,5 +1,11 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 1.1.6
+
+### Patch Changes
+
+- ca0f374: Fix imports
+
 ## 1.1.3
 
 ### Patch Changes
