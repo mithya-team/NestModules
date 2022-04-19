@@ -1,5 +1,11 @@
 # @mithyateam/mongo-oplog-emitter
 
+## 2.2.0
+
+### Minor Changes
+
+- 87cdf77: Fix nest modules
+
 ## 2.1.3
 
 ### Patch Changes
