@@ -1,5 +1,11 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 1.1.2
+
+### Patch Changes
+
+- e4a2d7c: Update mongoesindexer deps
+
 ## 1.1.1
 
 ### Patch Changes
