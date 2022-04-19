@@ -895,15 +895,15 @@
     globby "^11.0.0"
     read-yaml-file "^1.1.0"
 
-"@mithyateam/mongoesindexer@^2.0.0":
-  version "2.0.0"
-  resolved "https://registry.yarnpkg.com/@mithyateam/mongoesindexer/-/mongoesindexer-2.0.0.tgz#cc759ad26d63c9a8d8c6a063244220a9d536c48b"
-  integrity sha512-itY9Sd2d5b9EGeA0VQUgcUUl0lR4HGITgNUqSOe+qPTsjTVfh3QPPdF8dnpdw89Vq+FgyNxHRJEukf4DXdIRCA==
+"@mithyateam/mongoesindexer@^2.0.1":
+  version "2.0.1"
+  resolved "https://registry.yarnpkg.com/@mithyateam/mongoesindexer/-/mongoesindexer-2.0.1.tgz#c6fef0e77f700a7824fd25c1ee094b3c7374e7d1"
+  integrity sha512-BgSbijq6QdjD2abGaYMa8d01Vgsn7CZtdfcOnczw2neWz6pWxGbgFJWABuXucw7itbtECQSvY2mKnmNv+pFbXA==
   dependencies:
     "@elastic/elasticsearch" "^8.1.0"
     deepmerge "^4.2.2"
     mongodb "^3.4.1"
-    mongoqueryresolver "git+https://github.com/jagzmz/mongoqueryresolver.git"
+    mongoqueryresolver "git@github.com:jagzmz/mongoqueryresolver.git"
 
 "@nestjs/common@^8.2.4":
   version "8.4.4"
@@ -5243,9 +5243,9 @@ mongodb@^3.3.0, mongodb@^3.4.1:
   optionalDependencies:
     saslprep "^1.0.0"
 
-"mongoqueryresolver@git+https://github.com/jagzmz/mongoqueryresolver.git":
+"mongoqueryresolver@git+ssh://git@github.com/jagzmz/mongoqueryresolver.git":
   version "1.0.27"
-  resolved "git+https://github.com/jagzmz/mongoqueryresolver.git#fcda74b01044dc3b45436dec0397d6be840d0676"
+  resolved "git+ssh://git@github.com/jagzmz/mongoqueryresolver.git#fcda74b01044dc3b45436dec0397d6be840d0676"
   dependencies:
     lodash "^4.17.15"
     mongodb "^3.3.0"
