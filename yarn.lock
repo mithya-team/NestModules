@@ -895,23 +895,23 @@
     globby "^11.0.0"
     read-yaml-file "^1.1.0"
 
-"@mithyateam/mongo-oplog-emitter@^2.2.0":
-  version "2.2.0"
-  resolved "https://registry.yarnpkg.com/@mithyateam/mongo-oplog-emitter/-/mongo-oplog-emitter-2.2.0.tgz#fb7e47bbfc99b235ba6e377b98198e6d3c84ad46"
-  integrity sha512-35AEzXqMFzpebJxg1FokQM8OZuHPDNIoc/H1RQGd3YAdHJlgXbhK56ixXsoTcK41/eAtlMfFNaFFu3KixMBJdA==
-  dependencies:
-    "@golevelup/nestjs-discovery" "^2.3.1"
-    lodash "^4.17.21"
-
-"@mithyateam/mongoesindexer@^2.0.4":
-  version "2.0.4"
-  resolved "https://registry.yarnpkg.com/@mithyateam/mongoesindexer/-/mongoesindexer-2.0.4.tgz#d066557317109daa4dac7d915994771e85afae4e"
-  integrity sha512-Gs6ohKEUnRW9pbfkshUr1sSkNNIKNly93eDtwa/zRmqtemLLoXRakhCQmT9EGE3USztfZgpwgEj0i59B3NGRTQ==
+"@mithyateam/mongoesindexer@^2.0.5":
+  version "2.0.5"
+  resolved "https://registry.yarnpkg.com/@mithyateam/mongoesindexer/-/mongoesindexer-2.0.5.tgz#42351235d1d83ae39e33ff7e8fad9afe16fe1e13"
+  integrity sha512-uOzG8MPf5TUojENfzcNw8aK7I7eyCHULt4ZJWOCNGYrTEKiwtTSp6JAAiMbFURbcU+PcyuGsbiIu0XEjFGszpA==
   dependencies:
     "@elastic/elasticsearch" "^8.1.0"
+    "@mithyateam/mongoqueryresolver" "^1.2.0"
     deepmerge "^4.2.2"
     mongodb "^3.4.1"
-    mongoqueryresolver "git+ssh://git@github.com/jagzmz/mongoqueryresolver.git"
+
+"@mithyateam/mongoqueryresolver@^1.2.0":
+  version "1.2.0"
+  resolved "https://registry.yarnpkg.com/@mithyateam/mongoqueryresolver/-/mongoqueryresolver-1.2.0.tgz#5b303e14d45476e3dbf87db46777fa0102c008f9"
+  integrity sha512-NkyQZFSQLb4mnASrvzhfvgwn2/TGF9+Kw725dVMneoegDY35FDqAXZ1TfH4zTaBfUocnOMsKottEBYJ6b7kfYw==
+  dependencies:
+    lodash "^4.17.15"
+    mongodb "^3.3.0"
 
 "@nestjs/common@^8.2.4":
   version "8.4.4"
@@ -5250,13 +5250,6 @@ mongodb@^3.3.0, mongodb@^3.4.1:
     safe-buffer "^5.1.2"
   optionalDependencies:
     saslprep "^1.0.0"
-
-"mongoqueryresolver@git+ssh://git@github.com/jagzmz/mongoqueryresolver.git":
-  version "1.0.27"
-  resolved "git+ssh://git@github.com/jagzmz/mongoqueryresolver.git#fcda74b01044dc3b45436dec0397d6be840d0676"
-  dependencies:
-    lodash "^4.17.15"
-    mongodb "^3.3.0"
 
 ms@2.0.0:
   version "2.0.0"
