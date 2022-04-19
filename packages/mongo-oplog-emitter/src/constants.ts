@@ -8,6 +8,7 @@ export interface IMongoOplogOptions {
 
 export interface IMongoOplogModuleOptions {
   inject?: any[];
+  imports?: any[];
   useFactory: (
     ...args: any[]
   ) => Promise<IMongoOplogOptions> | IMongoOplogOptions;
