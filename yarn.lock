@@ -895,15 +895,15 @@
     globby "^11.0.0"
     read-yaml-file "^1.1.0"
 
-"@mithyateam/mongoesindexer@^2.0.1":
-  version "2.0.1"
-  resolved "https://registry.yarnpkg.com/@mithyateam/mongoesindexer/-/mongoesindexer-2.0.1.tgz#c6fef0e77f700a7824fd25c1ee094b3c7374e7d1"
-  integrity sha512-BgSbijq6QdjD2abGaYMa8d01Vgsn7CZtdfcOnczw2neWz6pWxGbgFJWABuXucw7itbtECQSvY2mKnmNv+pFbXA==
+"@mithyateam/mongoesindexer@^2.0.2":
+  version "2.0.2"
+  resolved "https://registry.yarnpkg.com/@mithyateam/mongoesindexer/-/mongoesindexer-2.0.2.tgz#fe92fa982e87944c6dde2446f069c45a27e994f4"
+  integrity sha512-n8oRbuRyCX1PXkeWuGgycF9WjRnuX+DGgf/H+89kLRVN0sT0TdXSY5o4CGFGaEBxnJAzgagraQnFex5xyoATXQ==
   dependencies:
     "@elastic/elasticsearch" "^8.1.0"
     deepmerge "^4.2.2"
     mongodb "^3.4.1"
-    mongoqueryresolver "git@github.com:jagzmz/mongoqueryresolver.git"
+    mongoqueryresolver "git+ssh://git@github.com/jagzmz/mongoqueryresolver.git"
 
 "@nestjs/common@^8.2.4":
   version "8.4.4"
