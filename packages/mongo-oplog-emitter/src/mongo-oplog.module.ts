@@ -28,12 +28,11 @@ export class MongoOplogModule implements OnModuleInit, OnModuleDestroy {
     return {
       imports: [DiscoveryModule, ...options.imports],
       module: MongoOplogModule,
-      useFactory: options.useFactory,
-      inject: options.inject || [],
       providers: [
         {
           provide: MONGO_OPLOG_OPTIONS,
           useFactory: options.useFactory,
+          inject: options.inject || [],
         },
       ],
     };

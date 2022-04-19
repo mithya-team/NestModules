@@ -14,6 +14,18 @@
         "assets": ["packages/component-elasticsearch/*.md"]
       }
     },
+    "watch": {
+      "executor": "@nrwl/js:tsc",
+      "options": {
+        "outputPath": "dist/component-elasticsearch",
+        "watch": true,
+        "main": "packages/component-elasticsearch/src/index.ts",
+        "tsConfig": "packages/component-elasticsearch/tsconfig.build.json",
+        "deleteOutputPath": true,
+        "packageJson": "packages/component-elasticsearch/package.json",
+        "assets": ["packages/component-elasticsearch/*.md"]
+      }
+    },
     "test": {
       "executor": "@nrwl/jest:jest",
       "options": {
