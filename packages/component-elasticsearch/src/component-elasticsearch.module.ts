@@ -45,6 +45,7 @@ export default class ComponentElasticsearchModule {
       module: ComponentElasticsearchModule,
       imports: [
         MongoOplogModule.registerAsync({
+          imports: [...mongoOplogOptions.imports],
           useFactory: mongoOplogOptions.useFactory,
           inject: [...mongoOplogOptions.inject]
         }),
