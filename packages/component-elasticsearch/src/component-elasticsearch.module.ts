@@ -122,15 +122,18 @@ export default class ComponentElasticsearchModule {
       mongoEsIndexerOptions.indexPrefix,
       mongoEsIndexerOptions.defaultConfigPath,
     );
+    
     await mongoEsIndexerInstance.setup();
-    process.nextTick(async () => {
+
+    // Init from consuming application
+    /* process.nextTick(async () => {
       try {
         await mongoEsIndexerInstance.init();
       } catch (error) {
         mongoEsIndexerInstance.IS_ERRORED = true;
         console.error(error);
       }
-    })
+    }) */
     return mongoEsIndexerInstance;
   }
 }

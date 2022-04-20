@@ -1,6 +1,6 @@
 {
   "name": "@mithyateam/nest-component-elasticsearch",
-  "version": "1.2.2",
+  "version": "1.2.3",
   "scripts": {
     "test": "node index.js"
   },

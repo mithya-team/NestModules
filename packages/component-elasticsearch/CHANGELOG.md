@@ -1,5 +1,11 @@
 # @mithyateam/nest-component-elasticsearch
 
+## 1.2.3
+
+### Patch Changes
+
+- Do not index on module init
+
 ## 1.2.2
 
 ### Patch Changes
